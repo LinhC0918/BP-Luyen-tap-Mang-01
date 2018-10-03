@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+    <script>
+        var item0 = prompt('Enter the item0 in the array');
+        var item1 = prompt('Enter the item1 in the array');
+        var item2 = prompt('Enter the item2 in the array');
+        var item3 = prompt('Enter the item3 in the array');
+        var item4 = prompt('Enter the item4 in the array');
+        var array = [item0,item1,item2,item3,item4];
+        var first = 0;
+        var last = array.length - 1;
+        while (first < last){
+            var b = array[first];
+            array[first] = array[last];
+            array[last] = b;
+            first++;
+            last--;
+        }
+        document.write(array);
+    </script>
+</body>
+</html>

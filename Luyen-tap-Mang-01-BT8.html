@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT8</title>
+</head>
+<body>
+    <script>
+        var arrayInt = [12,-18,22,26,-84,3,0,-1,10,-5];
+        for (var i = 0; i < arrayInt.length-1; i++){
+            for (var j = i + 1; j < arrayInt.length; j++){
+                var temp;
+                if (arrayInt[i] < arrayInt[j]){
+                    temp = arrayInt[i];
+                    arrayInt[i] = arrayInt[j];
+                    arrayInt[j] = temp;
+                }
+            }
+        }
+        alert(arrayInt);
+    </script>
+</body>
+</html>

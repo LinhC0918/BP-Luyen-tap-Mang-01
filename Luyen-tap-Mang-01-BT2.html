@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT2</title>
+</head>
+<body>
+    <script>
+        var arrayInt = [12,18,22,26,-84,3,0,1,10,5];
+        var max = arrayInt[0];
+        var index;
+        for (var i = 0; i < arrayInt.length; i++){
+            if (max < arrayInt[i]){
+                max = arrayInt[i];
+                index = i;
+            }
+
+        }
+        document.write('Số ' + max + ' là số lớn nhất và ở vị trí ' + index);
+    </script>
+</body>
+</html>
